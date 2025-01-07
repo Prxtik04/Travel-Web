@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background: #679269;
+    color: rgb(212, 198, 198);
+    padding: 15px 20px;
+    text-align: center;
+}
+nav {
+    background: hsl(0, 3%, 38%);
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav a {
+    color: rgb(160, 217, 219);
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    margin: 10px;
+}
+nav a:hover {
+    background-color: rgb(106, 115, 116);
+    color: aqua;
+}
+.hero {
+    background: url('./download.jpg') no-repeat center center/cover;
+    color: hsl(251, 70%, 26%);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#about{
+    color: black;
+    font-size: 1em;
+}
+
+#about h4{
+    color: rgb(141, 226, 226);
+}
+
+img{
+    width: 40%;
+    height: 50%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+li{
+    color: hsl(0, 5%, 13%);
+    font-size: large;
+}
+
+section {
+    padding: 20px;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 20px;
+    }
+    nav a {
+        padding: 10px;
+    }
+}
+@media (max-width: 480px) {
+    header {
+        font-size: 18px;
+    }
+    .hero {
+        font-size: 16px;
+        padding: 30px 10px;
+    }
+    .contact-form {
+        padding: 10px;
+    }
+}
